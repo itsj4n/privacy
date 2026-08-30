@@ -67,9 +67,10 @@
   <h1>Privacy Policy for DualMod</h1>
   <p class="updated">Last updated: August 30, 2026</p>
   <p>
-    This Privacy Policy applies to the <strong>DualMod</strong> Discord bot,
-    its verification pages, and related features for Roblox verification,
-    moderation, support tickets, and reports.
+    This Privacy Policy applies to the <strong>DualMod</strong> Discord bot
+    operated for the operator's Discord server, its verification pages, and
+    related features for Roblox verification, moderation, support tickets,
+    reports, and bug reports.
   </p>
   <div class="notice">
     <strong>Important:</strong> DualMod does not receive your Roblox password
@@ -95,7 +96,10 @@
     <li>Discord usernames, display names, and membership status,</li>
     <li>roles and permissions where required for moderation or access checks,</li>
     <li>messages, report text, attachments, and ticket content when you submit
-      them to DualMod or through a ticket.</li>
+      them to DualMod or through a ticket,</li>
+    <li>server, channel, and role changes that DualMod records in moderation
+      logs, such as members joining or leaving, roles being changed, and
+      channels being created, updated, or deleted.</li>
   </ul>
   <h3>2.2 Roblox Verification</h3>
   <p>
@@ -113,22 +117,68 @@
     Roblox name. As a result, your Roblox name and Verified role may be visible
     to other members of the relevant Discord server.
   </p>
-  <h3>2.3 Moderation, Tickets, and Reports</h3>
+  <h3>2.3 Moderation, Tickets, Reports, and Bug Reports</h3>
   <p>
-    For moderation actions, support tickets, bug reports, or reports, the
-    content of your submission, timestamps, involved Discord IDs, moderation
-    actions, attachments, and technical processing information may also be
-    stored or displayed in designated Discord channels. This content is
-    generally visible only to people who have access to the relevant server or
-    moderation channels.
+    DualMod provides moderation commands such as <code>/ban</code>,
+    <code>/unban</code>, <code>/timeout</code>, and <code>/purge</code>. The
+    purge command deletes selected recent messages from the Discord channel.
+    For these actions, DualMod may process the affected user's Discord ID, the
+    moderator's Discord ID, the selected action, reason, duration, timestamps,
+    and related server or channel information.
   </p>
-  <h3>2.4 Technical Access Data</h3>
   <p>
-    Technical infrastructure and network service providers used by DualMod may
-    process technical data such as IP addresses, timestamps, error data, and
-    connection data to provide and secure the service. DualMod's normal bot
-    logic does not create advertising profiles and does not intentionally use
-    tracking pixels or marketing cookies.
+    Support tickets, Roblox staff reports, and bug reports may contain the
+    content of your submission, Discord IDs, Roblox identifiers or names,
+    attachments, screenshots, videos, logs, timestamps, and review decisions.
+    These data may be stored or displayed in designated private staff channels.
+  </p>
+  <p>
+    Report review actions include accepting, rejecting, blacklisting, and
+    deleting a report. The report deletion action sends a deletion request for
+    the related report copies. When a support ticket is closed, DualMod
+    archives a transcript in the ticket log and then deletes the ticket
+    channel. These actions may involve the configured report-processing service
+    described below.
+  </p>
+  <h3>2.4 Blacklists and Temporary Restrictions</h3>
+  <p>
+    The <code>/blacklist</code> command can add or remove blacklist entries for
+    Discord users, Roblox users, or Discord servers. Blacklist information may
+    include the target identifier, reason, moderator information, creation time,
+    and expiration time. Blacklist checks can prevent reports from being
+    submitted.
+  </p>
+  <p>
+    DualMod can also create a temporary automatic blacklist and an
+    approximately eight-hour moderation restriction when its report protection
+    detects a forbidden link or Discord invite fragment. The restriction and
+    its reason may be recorded in the bot's moderation data and reported to the
+    operator's moderation team.
+  </p>
+  <h3>2.5 Discord Activity and AutoMod Logs</h3>
+  <p>
+    To support moderation on the operator's Discord server, DualMod may log
+    edited messages, deleted messages, bulk message deletions, member joins and
+    leaves, member role or nickname changes, server setting changes, channel
+    changes, and actions from Discord's native AutoMod. Depending on the event,
+    a log may include message content, an edited version of a message, an
+    attachment link, a matched keyword or matched content, the relevant
+    Discord IDs, and the event time.
+  </p>
+  <h3>2.6 Technical Access Data</h3>
+  <p>
+    Technical infrastructure and network services used by DualMod may process
+    technical data such as IP addresses, timestamps, error data, and
+    connection data to provide and secure the verification pages and API
+    endpoints. DualMod's normal bot logic does not create advertising profiles
+    and does not intentionally use tracking pixels or marketing cookies.
+  </p>
+  <h3>2.7 Local Bot Storage</h3>
+  <p>
+    The bot may persist verification records, saved Roblox names, blacklist
+    entries, and moderation-lock information in local bot data files. Temporary
+    report payloads and review decisions may also be held in memory while they
+    are being processed.
   </p>
   <h2>3. Purposes and Legal Basis</h2>
   <p>Processing takes place for the following purposes:</p>
@@ -155,9 +205,9 @@
     <li>to other server members if your Roblox name is set as your Discord
       nickname,</li>
     <li>to moderators or support members in designated Discord channels,</li>
-    <li>to people with authorized access to the hosting environment or stored
-      bot data,</li>
-    <li>to providers needed for hosting, Discord communication, Roblox OAuth,
+    <li>to the operator and authorized members of the moderation team who can
+      access the bot's stored data,</li>
+    <li>to technical services needed for Discord communication, Roblox OAuth,
       callback processing, or the technical processing of reports.</li>
   </ul>
   <p>
@@ -200,10 +250,12 @@
     obligation or documented security reason requires continued retention.
   </p>
   <p>
-    Ticket, report, and moderation data is retained only for as long as needed
-    for handling, security, documentation, or legal obligations. Data held by
-    Discord, the hosting provider, or other third parties may also be subject
-    to their own retention periods.
+    Ticket, report, bug-report, activity-log, and moderation data is retained
+    only for as long as needed for handling, security, documentation, or legal
+    obligations. Closing a ticket deletes the ticket channel after its
+    transcript has been archived in the ticket log. Data held by Discord or
+    other technical providers may also be subject to their own retention
+    periods.
   </p>
   <h2>8. Your Rights</h2>
   <p>
